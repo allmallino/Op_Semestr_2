@@ -1,0 +1,53 @@
+﻿<Window x:Name="WindowOne" x:Class="Лаба_1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Лаба_1"
+        mc:Ignorable="d"
+        Title="Student Database" Height="394.348" Width="828.043" ResizeMode="NoResize" Icon="icons8-student-60.png">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFF9F9F9" Offset="1"/>
+            <GradientStop Color="#FFF7E6C6" Offset="0.702"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid x:Name="BaseGrid">
+        <Button x:Name="Back" Content="Хаб" HorizontalAlignment="Left" Height="40" Margin="715,315,0,0" Width="60" Click="Button_Click" FontFamily="Gabriola" FontSize="24" Background="#FFFDDDA0" BorderBrush="#FFF3C00E" BorderThickness="3" Padding="0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="CapLable" Content="Меню" HorizontalAlignment="Left" Height="87" Margin="27,10,0,0" VerticalAlignment="Top" Width="570" FontSize="48" FontFamily="Georgia"/>
+
+        <Grid x:Name="DefaultElements" HorizontalAlignment="Left" Height="420" Margin="0,0,0,0" VerticalAlignment="Top" Width="815">
+            <Button x:Name="BtnAddStud" Content="Добавить" HorizontalAlignment="Left" Height="132" Margin="10,129,0,0" VerticalAlignment="Top" Width="255" Click="AddBtn" Background="#FFFDDDA0" BorderBrush="#FFF3C00E" BorderThickness="3" FontSize="36" FontFamily="Gabriola"/>
+            <Button x:Name="BtnShowStud" Content="Показать" HorizontalAlignment="Left" Height="132" Margin="279,129,0,0" VerticalAlignment="Top" Width="255" Click="ShowBtn" Background="#FFFDDDA0" BorderBrush="#FFF3C00E" BorderThickness="3" FontSize="36" FontFamily="Gabriola"/>
+            <Button x:Name="BtnDelStud" Content="Удалить" HorizontalAlignment="Left" Height="132" Margin="545,129,0,0" VerticalAlignment="Top" Width="255" Click="DelBtn" Background="#FFFDDDA0" BorderBrush="#FFF3C00E" BorderThickness="3" FontSize="36" FontFamily="Gabriola"/>
+        </Grid>
+
+        <Grid x:Name="AddElements" HorizontalAlignment="Left" Height="365" Margin="0,0,0,-0.2" VerticalAlignment="Top" Width="815" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Disabled" Visibility="Hidden">
+            <TextBox x:Name="AddName" HorizontalAlignment="Left" Height="30" Margin="27,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="20" Background="OldLace" BorderBrush="#FFF3C00E" BorderThickness="2"/>
+            <TextBox x:Name="AddNum" HorizontalAlignment="Left" Height="30" Margin="154,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" RenderTransformOrigin="0.435,0.786" FontSize="20" Background="OldLace" BorderBrush="#FFF3C00E" BorderThickness="2"/>
+            <TextBox x:Name="AddGroup" HorizontalAlignment="Left" Height="30" Margin="432,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="20" Background="OldLace" BorderBrush="#FFF3C00E" BorderThickness="2"/>
+            <Button x:Name="Add" Content="Добавить" HorizontalAlignment="Left" Height="53" Margin="603,230,0,0" VerticalAlignment="Top" Width="155" Click="Button_Click_Add" BorderBrush="#FFF3C00E" BorderThickness="3" Background="#FFFDDDA0" FontSize="24" FontFamily="Gabriola"/>
+            <TextBox x:Name="AddSurname" HorizontalAlignment="Left" Height="30" Margin="295,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="22" Background="OldLace" BorderBrush="#FFF3C00E" BorderThickness="2"/>
+            <TextBox x:Name="AddLastName" HorizontalAlignment="Left" Height="30" Margin="558,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="20" Background="OldLace" BorderBrush="#FFF3C00E" BorderThickness="2"/>
+            <Label Content="Имя" HorizontalAlignment="Left" Height="24" Margin="28,115,0,0" VerticalAlignment="Top" Width="160" FontSize="18" Padding="0" FontFamily="Times New Roman"/>
+            <Label Content="Фамилия" HorizontalAlignment="Left" Height="24" Margin="296,115,0,0" VerticalAlignment="Top" Width="160" FontSize="18" Padding="0" FontFamily="Times New Roman"/>
+            <Label Content="Отчество" HorizontalAlignment="Left" Height="24" Margin="559,115,0,0" VerticalAlignment="Top" Width="160" FontSize="18" Padding="0" FontFamily="Times New Roman"/>
+            <Label Content="Номер зачетной книги" HorizontalAlignment="Left" Height="24" Margin="155,177,0,0" VerticalAlignment="Top" Width="200" FontSize="16" Padding="0" FontFamily="Times New Roman"/>
+            <Label Content="Группа" HorizontalAlignment="Left" Height="24" Margin="433,177,0,0" VerticalAlignment="Top" Width="160" FontSize="16" Padding="0" FontFamily="Times New Roman"/>
+        </Grid>
+
+        <Grid x:Name="ShowElements" HorizontalAlignment="Left" Height="420" Margin="0,0,0,0" VerticalAlignment="Top" Width="815" Visibility="Hidden">
+            <ListBox x:Name="StudList" Height="230" Margin="30,71,40,0" VerticalAlignment="Top" FontSize="22" FontFamily="Georgia" Background="#FFFAF4E9" BorderBrush="#FFF3C00E" BorderThickness="3"/>
+        </Grid>
+
+        <Grid x:Name="DeleteElements" HorizontalAlignment="Left" Height="365" Margin="0,0,0,-0.2" VerticalAlignment="Top" Width="815" Visibility="Hidden">
+            <ComboBox x:Name="PIPDelete" HorizontalAlignment="Left" Height="50" Margin="35,154,0,0" VerticalAlignment="Top" Width="437" FontSize="24" SelectionChanged="PIPDelete_SelectionChanged" FontFamily="Times New Roman" BorderBrush="#FFF3C00E" BorderThickness="2"/>
+            <Label Content="ФИО" HorizontalAlignment="Left" Height="31" Margin="35,130,0,0" VerticalAlignment="Top" Width="437" FontFamily="Times New Roman" FontSize="22" Padding="0"/>
+            <Button x:Name="DeleteConfirm" Content="Удалить" HorizontalAlignment="Left" Height="50" Margin="533,220,0,0" VerticalAlignment="Top" Width="241" Click="DeleteConfirm_Click" Background="#FFFDDDA0" BorderBrush="#FFF3C00E" Padding="1" BorderThickness="3" FontSize="24" FontFamily="Gabriola"/>
+            <ComboBox x:Name="NumDelete" HorizontalAlignment="Left" Height="50" Margin="533,154,0,0" VerticalAlignment="Top" Width="240" SelectionChanged="NumDelete_SelectionChanged" FontSize="24" FontFamily="Times New Roman" BorderBrush="#FFF3C00E" BorderThickness="2" ClipToBounds="True"/>
+            <Label Content="Номер книги" HorizontalAlignment="Left" Height="31" Margin="533,130,0,0" VerticalAlignment="Top" Width="241" FontFamily="Times New Roman" FontSize="22" Padding="0"/>
+        </Grid>
+        <Button x:Name="BackBtn" Content="Назад" HorizontalAlignment="Left" Height="30" Margin="675,20,0,0" VerticalAlignment="Top" Width="100" Click="Button_Back" Background="#FFFDDDA0" BorderBrush="#FFF3C00E" BorderThickness="3" FontFamily="Gabriola" FontSize="24" Padding="0,-7,0,0" Visibility="Hidden"/>
+
+    </Grid>
+</Window>

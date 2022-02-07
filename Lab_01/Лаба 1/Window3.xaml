@@ -1,0 +1,111 @@
+﻿<Window x:Name="WindowThree" x:Class="Лаба_1.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Лаба_1"
+        mc:Ignorable="d"
+        Title="Calculator" Height="480" Width="410" Background="#FFD1D1D1" ResizeMode="NoResize" Icon="icons8-calculator-64.png" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Калькулятор" HorizontalAlignment="Left" Height="69" Margin="10,2,0,0" VerticalAlignment="Top" Width="341" FontSize="24" FontFamily="Segoe UI Black"/>
+        <Button Content="Хаб" HorizontalAlignment="Left" Height="30" Margin="332,10,0,0" VerticalAlignment="Top" Width="50" Background="White" FontFamily="Segoe UI Black" FontSize="18" Click="Button_Click"/>
+        <Label x:Name="CalcText" Content="" HorizontalAlignment="Left" Height="56" Margin="12,72,0,0" VerticalAlignment="Top" Width="370" Background="White" FontSize="36" TextOptions.TextHintingMode="Fixed" HorizontalContentAlignment="Right" FontFamily="Times New Roman"/>
+        <Button x:Name="BtnEqual" Content="=" HorizontalAlignment="Left" Height="60" Margin="112,135,0,0" VerticalAlignment="Top" Width="100" Click="BtnEqual_Click" BorderBrush="#FF707070" BorderThickness="0">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BtnClear" Content="С" HorizontalAlignment="Left" Height="60" Margin="213,135,0,0" VerticalAlignment="Top" Width="100" Click="BtnClear_Click" BorderBrush="#FF707070" BorderThickness="0">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BtnDelete" Content="⌫" HorizontalAlignment="Left" Height="60" Margin="314,135,0,0" VerticalAlignment="Top" Width="70" Click="BtnDelete_Click" BorderBrush="#FF707070" BorderThickness="0">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BtnSeven" Content="7" HorizontalAlignment="Left" Height="60" Margin="11,196,0,0" VerticalAlignment="Top" Width="100" Click="Btn_Click" BorderBrush="#FF707070" BorderThickness="0">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BtnEight" Content="8" HorizontalAlignment="Left" Height="60" Margin="112,196,0,0" VerticalAlignment="Top" Width="100" Click="Btn_Click" BorderBrush="#FF707070" BorderThickness="0">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BtnNine" Content="9" HorizontalAlignment="Left" Height="60" Margin="213,196,0,0" VerticalAlignment="Top" Width="100" Click="Btn_Click" BorderBrush="#FF707070" BorderThickness="0">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BtnDivide" Content="÷" HorizontalAlignment="Left" Height="60" Margin="314,196,0,0" VerticalAlignment="Top" Width="70" Click="BtnZnak_Click" BorderBrush="#FF707070" BorderThickness="0">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BtnFour" Content="4" HorizontalAlignment="Left" Height="60" Margin="11,257,0,0" VerticalAlignment="Top" Width="100" Cursor="" Click="Btn_Click" BorderBrush="#FF707070" BorderThickness="0">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BtnFive" Content="5" HorizontalAlignment="Left" Height="60" Margin="112,257,0,0" VerticalAlignment="Top" Width="100" Click="Btn_Click" BorderBrush="#FF707070" BorderThickness="0">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BtnSix" Content="6" HorizontalAlignment="Left" Height="60" Margin="213,257,0,0" VerticalAlignment="Top" Width="100" Click="Btn_Click" BorderBrush="#FF707070" BorderThickness="0">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BtnMultiply" Content="×" HorizontalAlignment="Left" Height="60" Margin="314,257,0,0" VerticalAlignment="Top" Width="70" Click="BtnZnak_Click" BorderBrush="#FF707070" BorderThickness="0">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BtnOne" Content="1" HorizontalAlignment="Left" Height="60" Margin="11,318,0,0" VerticalAlignment="Top" Width="100" Click="Btn_Click" BorderBrush="#FF707070" BorderThickness="0">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BtnTwo" Content="2" HorizontalAlignment="Left" Height="60" Margin="112,318,0,0" VerticalAlignment="Top" Width="100" Click="Btn_Click" BorderBrush="#FF707070" BorderThickness="0">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BtnThree" Content="3" HorizontalAlignment="Left" Height="60" Margin="213,318,0,0" VerticalAlignment="Top" Width="100" Click="Btn_Click" BorderBrush="#FF707070" BorderThickness="0">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BtnMinus" Content="-" HorizontalAlignment="Left" Height="60" Margin="314,318,0,0" VerticalAlignment="Top" Width="70" Click="BtnZnak_Click" BorderBrush="#FF707070" BorderThickness="0">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0"/>
+            </Button.Background>
+        </Button>
+        <Button Content="+/-" HorizontalAlignment="Left" Height="60" Margin="11,379,0,0" VerticalAlignment="Top" Width="100" BorderBrush="#FF707070" BorderThickness="0" Click="Button_Click_1">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BtnZero" Content="0" HorizontalAlignment="Left" Height="60" Margin="112,379,0,0" VerticalAlignment="Top" Width="100" Click="Btn_Click" BorderBrush="#FF707070" BorderThickness="0">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BtnDot" Content="," HorizontalAlignment="Left" Height="60" Margin="213,379,0,0" VerticalAlignment="Top" Width="100" Click="Btn_Click" BorderBrush="#FF707070" BorderThickness="0">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BtnPlus" Content="+" HorizontalAlignment="Left" Height="60" Margin="314,379,0,0" VerticalAlignment="Top" Width="70" Click="BtnZnak_Click" BorderBrush="#FF707070" BorderThickness="0">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="Small_CalcText" Content="" HorizontalAlignment="Left" Height="27" Margin="12,45,0,0" VerticalAlignment="Top" Width="370" Background="White" TextOptions.TextHintingMode="Fixed" HorizontalContentAlignment="Right" FontFamily="Times New Roman"/>
+
+    </Grid>
+</Window>
