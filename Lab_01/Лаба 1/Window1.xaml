@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Лаба_1"
         mc:Ignorable="d"
-        Title="Student Database" Height="394.348" Width="828.043" ResizeMode="NoResize" Icon="icons8-student-60.png">
+        Title="Student Database" Height="394.348" Width="828.043" ResizeMode="NoResize" Icon="icons8-student-60.png" WindowStartupLocation="CenterScreen">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="#FFF9F9F9" Offset="1"/>

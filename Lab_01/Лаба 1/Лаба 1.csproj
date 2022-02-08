@@ -129,9 +129,6 @@
     <Resource Include="glutes_fitness_gym_icon_181749.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Student.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="icons8-calculator-64.png" />
   </ItemGroup>
   <ItemGroup>

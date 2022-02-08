@@ -42,7 +42,7 @@ namespace Лаба_1
         private List<Student> readlist()
         {
             List<Student> students = new List<Student>();
-            StreamReader rdr = new StreamReader(@"C:\Users\Александр\source\repos\Лаба 1\Лаба 1\Student.txt");
+            StreamReader rdr = new StreamReader("Student.txt");
             string[] m = rdr.ReadToEnd().Split('\n');
             string[] s;
             for (int i = 0; i < m.Length; i++)
@@ -61,7 +61,7 @@ namespace Лаба_1
 
         private void writelist()
         {
-            StreamWriter wrt = new StreamWriter(@"C:\Users\Александр\source\repos\Лаба 1\Лаба 1\Student.txt");
+            StreamWriter wrt = new StreamWriter("Student.txt");
             foreach (Student s in students)
             {
                 wrt.Write(s.GetPIP() + "|" + s.GetNumZalik() + "|" + s.GetGroup()+"\n");
@@ -120,7 +120,7 @@ namespace Лаба_1
             foreach (Student s in students)
             {
                 i++;
-                StudList.Items.Add(i + "] " + s.GetPIP() + "\t" + s.GetNumZalik() + "\t" + s.GetGroup());
+                StudList.Items.Add(i + "] " + s.GetPIP() + ",\t" + s.GetNumZalik() + ",\t" + s.GetGroup());
             }
             if (i == 0)
                 StudList.Items.Add("В базу данных студентов занесено не было");
@@ -157,7 +157,7 @@ namespace Лаба_1
                 }
                 students.Add(new Student(AddSurname.Text + " " + AddName.Text +  " " + AddLastName.Text, AddNum.Text,AddGroup.Text));
                 writelist();
-                MessageBox.Show("Вы успешно добавили студента");
+                MessageBox.Show("Вы успешно добавили студента "+ AddSurname.Text + " " + AddName.Text + " " + AddLastName.Text);
                 foreach(TextBox tt in AddElements.Children.OfType<TextBox>())
                 {
                     tt.Text = null;
