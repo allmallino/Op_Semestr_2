@@ -80,7 +80,7 @@ namespace Практика_1
                                 sum += Math.Pow(k[n] - M, 2);
                             }
                             S = Math.Sqrt(sum / (k.Count - 1));
-                            Tp = Math.Abs((y[TryNow - 1][j] - M) / S);
+                            Tp = Math.Abs((y[TryNow - 1][j] - M) / (S/Math.Sqrt(k.Count)));
                             if (Tp > 2.31)
                             {
                                 y[TryNow - 1].RemoveAt(j);
