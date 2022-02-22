@@ -1,0 +1,16 @@
+C:\Users\Александр\source\repos\Лаба 1\Лаба 2\obj\Debug\Лаба 2.csproj.AssemblyReference.cache
+C:\Users\Александр\source\repos\Лаба 1\Лаба 2\obj\Debug\Лаба 2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Александр\source\repos\Лаба 1\Лаба 2\obj\Debug\MainWindow.g.cs
+C:\Users\Александр\source\repos\Лаба 1\Лаба 2\obj\Debug\App.g.cs
+C:\Users\Александр\source\repos\Лаба 1\Лаба 2\obj\Debug\Лаба 2_MarkupCompile.cache
+C:\Users\Александр\source\repos\Лаба 1\Лаба 2\obj\Debug\Лаба 2_MarkupCompile.lref
+C:\Users\Александр\source\repos\Лаба 1\Лаба 2\bin\Debug\Лаба 2.exe.config
+C:\Users\Александр\source\repos\Лаба 1\Лаба 2\bin\Debug\Лаба 2.exe
+C:\Users\Александр\source\repos\Лаба 1\Лаба 2\bin\Debug\Лаба 2.pdb
+C:\Users\Александр\source\repos\Лаба 1\Лаба 2\obj\Debug\MainWindow.baml
+C:\Users\Александр\source\repos\Лаба 1\Лаба 2\obj\Debug\Лаба 2.g.resources
+C:\Users\Александр\source\repos\Лаба 1\Лаба 2\obj\Debug\Лаба_2.Properties.Resources.resources
+C:\Users\Александр\source\repos\Лаба 1\Лаба 2\obj\Debug\Лаба 2.csproj.GenerateResource.cache
+C:\Users\Александр\source\repos\Лаба 1\Лаба 2\obj\Debug\Лаба 2.csproj.CoreCompileInputs.cache
+C:\Users\Александр\source\repos\Лаба 1\Лаба 2\obj\Debug\Лаба 2.exe
+C:\Users\Александр\source\repos\Лаба 1\Лаба 2\obj\Debug\Лаба 2.pdb
