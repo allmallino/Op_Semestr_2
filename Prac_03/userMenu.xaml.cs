@@ -33,6 +33,7 @@ namespace Prac03
         {
             this.Login = Login;
             connect=connection;
+            connect.Open();
             InitializeComponent();
             table=new DataTable();
             UpdateTable();
@@ -94,14 +95,13 @@ namespace Prac03
         {
             newPasswordGrid.Visibility=Visibility.Visible;
         }
-        
         private void Border_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
         {
+            MessageBox.Show("Name and Surname was succesfuly changed");
             command = new SqlCommand("update [User] set [Name] ='" + nameTb.Text + "', [Surname]='"+surnameTb.Text+"' where [Nickname] = '" + Login + "'", connect);
             command.ExecuteNonQuery();
             UpdateTable();
         }
-
         private void Border_MouseLeftButtonDown_3(object sender, MouseButtonEventArgs e)
         {
             if(oldPasswordTb.Password == table.Rows[0][2].ToString())

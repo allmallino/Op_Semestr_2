@@ -35,9 +35,9 @@ namespace Prac03
         {
             this.Login = Login;
             connection = connect;
+            connection.Open();
             table = new DataTable();
             restrictions = new DataTable();
-            connection.Open();
             TableUpdate();
             InitializeComponent();
             secretLabel.Content=welcomeLabel.Content = "Welcome, "+Login;
@@ -66,6 +66,7 @@ namespace Prac03
 
         private void ConfigureThis_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            connection.Close();
             userMenu menu = new userMenu(Login, connection);
             menu.Show();
             Close();

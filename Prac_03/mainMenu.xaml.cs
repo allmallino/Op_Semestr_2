@@ -95,7 +95,6 @@ namespace Prac03
             connection.Open();
             command = new SqlCommand("select * from [User] where [Nickname]='" + userNickname.Text + "'", connection);
             adapter = new SqlDataAdapter(command);
-            connection.Close();
             adapter.Fill(dt);
             if (dt.Rows.Count == 0)
             {
@@ -103,7 +102,6 @@ namespace Prac03
                 {
                     if(userNickname.Text != "")
                     {
-                        connection.Open();
                         command = new SqlCommand("insert into [User] values('" + userNickname.Text + "','" + userPassword.Password + "',NULL,NULL,0,0,0)", connection);
                         command.ExecuteNonQuery();
                         connection.Close();
